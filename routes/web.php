@@ -23,3 +23,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/warehouse', function() {
   return view('content.warehouse');
 })->middleware('auth');
+
+Route::get('/locations', function() {
+  return view('content.locations');
+})->middleware('auth');
